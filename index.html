@@ -13,7 +13,6 @@
         
         :root {
             --brand-blue: #0056b3;
-            --brand-dark: #050b1a; 
             --cta-orange: #f8991d;
             --cta-yellow: #fff200;
         }
@@ -30,24 +29,18 @@
             height: 380px;
             border-radius: 20px;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
 
         @media (min-width: 768px) {
-            .swiper-slide {
-                width: 320px;
-                height: 450px;
-            }
+            .swiper-slide { width: 320px; height: 450px; }
         }
 
         @keyframes bounce-short {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-5px); }
         }
-        .animate-bounce-short {
-            animation: bounce-short 3s infinite ease-in-out;
-        }
+        .animate-bounce-short { animation: bounce-short 3s infinite ease-in-out; }
 
         @media (max-width: 768px) {
             body { padding-bottom: 80px; }
@@ -57,7 +50,7 @@
 <body class="bg-white text-gray-900 font-sans overflow-x-hidden">
 
     <nav class="fixed top-0 w-full z-50 nav-transparent py-4 md:py-6 px-4 md:px-12 flex justify-between items-center">
-        <img src="Imagens/logo.png" alt="Logo Refúgios Pedra Azul" class="h-10 md:h-20 w-auto drop-shadow-md"> 
+        <img src="logo.png" alt="Logo Refúgios Pedra Azul" class="h-10 md:h-20 w-auto drop-shadow-md"> 
         <a href="https://wa.me/SEUNUMERO" class="bg-[#f8991d] text-white px-5 md:px-8 py-2 md:py-3 rounded-full text-[10px] md:text-sm font-bold uppercase tracking-widest hover:brightness-110 transition shadow-lg">
             Falar com Consultor
         </a>
@@ -73,7 +66,7 @@
             <h1 class="text-4xl md:text-8xl font-serif font-bold mb-6 leading-tight">
                 Refúgios <br> <span class="text-[#fff200] italic font-light">Pedra Azul</span>
             </h1>
-            <p class="text-sm md:text-2xl mb-10 max-w-xl mx-auto font-light leading-relaxed text-stone-200 text-shadow">
+            <p class="text-sm md:text-2xl mb-10 max-w-xl mx-auto font-light leading-relaxed text-stone-200">
                 Terrenos exclusivos prontos para construir no coração das montanhas.
             </p>
             <a href="#vendas" class="bg-[#fff200] text-black px-10 md:px-14 py-4 md:py-5 rounded-full text-sm md:text-xl font-bold inline-block shadow-2xl hover:scale-105 transition-transform">
@@ -84,21 +77,21 @@
 
     <section id="galeria" class="py-16 md:py-24 bg-[#0056b3]">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif text-white mb-2">Infraestrutura Premium</h2>
+            <h2 class="text-3xl md:text-4xl font-serif text-white mb-2 text-shadow">Infraestrutura Premium</h2>
             <p class="text-blue-200 uppercase tracking-widest text-[10px] md:text-xs font-bold mb-8 md:mb-12 opacity-80">Imagens reais do local</p>
 
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="Imagens/foto10.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="foto10.jpeg" class="w-full h-full object-cover"></div>
                     <div class="swiper-slide">
                         <video autoplay loop muted playsinline class="w-full h-full object-cover">
                             <source src="Videos/video1.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="swiper-slide"><img src="Imagens/foto11.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto12.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto13.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto1.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="foto11.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="foto12.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="foto13.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide"><img src="foto1.jpeg" class="w-full h-full object-cover"></div>
                 </div>
                 <div class="swiper-pagination !bottom-0"></div>
             </div>
@@ -106,33 +99,33 @@
     </section>
 
     <section id="vendas" class="py-16 md:py-24 bg-white">
-        <div class="max-w-5xl mx-auto px-6">
+        <div class="max-w-5xl mx-auto px-6 text-center md:text-left">
             <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-                <div class="space-y-6 text-center md:text-left">
+                <div class="space-y-6">
                     <h2 class="text-3xl md:text-5xl font-serif text-[#0056b3] font-bold">Invista no que é real.</h2>
                     <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                        Lotes planejados com pavimentação asfáltica, iluminação e a vista mais valorizada de Domingos Martins.
+                        Lotes planejados com pavimentação asfáltica e a vista definitiva para a Pedra Azul.
                     </p>
                     <div class="bg-gray-50 p-6 md:p-8 rounded-3xl border-l-8 border-[#f8991d] text-left">
-                        <span class="text-gray-400 uppercase text-[10px] font-bold tracking-widest">Condição Especial</span>
+                        <span class="text-gray-400 uppercase text-[10px] font-bold tracking-widest text-shadow">Oportunidade</span>
                         <p class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">A partir de <span class="text-[#0056b3]">R$ 468.000</span></p>
                         <p class="text-xs md:text-sm text-gray-400 mt-1">Lotes a partir de 413m²</p>
                     </div>
                 </div>
                 <div class="relative w-full max-w-sm md:max-w-none mx-auto">
-                    <img src="Imagens/foto2.jpeg" class="rounded-[2rem] shadow-2xl w-full rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <img src="foto2.jpeg" class="rounded-[2rem] shadow-2xl w-full rotate-2">
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 bg-[#0056b3] text-center border-t border-white/5">
-        <img src="Imagens/logo.png" alt="Logo" class="h-12 mx-auto mb-6 opacity-40 grayscale">
-        <p class="text-gray-500 text-[8px] md:text-[10px] tracking-widest uppercase">© 2026 Refúgios Pedra Azul Loteamentos</p>
+    <footer class="py-12 bg-[#0056b3] text-center">
+        <img src="logo.png" alt="Logo" class="h-16 mx-auto mb-6 opacity-80">
+        <p class="text-white/50 text-[10px] tracking-widest uppercase italic">© 2026 Refúgios Pedra Azul Loteamentos</p>
     </footer>
 
     <div class="md:hidden fixed bottom-0 left-0 w-full z-[100] p-4 bg-gradient-to-t from-black to-transparent">
-        <a href="https://wa.me/SEUNUMERO" class="flex items-center justify-center gap-3 bg-[#f8991d] text-white py-4 rounded-2xl font-bold shadow-2xl animate-bounce-short text-xs">
+        <a href="https://wa.me/SEUNUMERO" class="flex items-center justify-center bg-[#f8991d] text-white py-4 rounded-2xl font-bold shadow-2xl animate-bounce-short text-xs">
             AGENDAR VISITA AGORA
         </a>
     </div>
@@ -144,13 +137,7 @@
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 15,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
+            coverflowEffect: { rotate: 15, stretch: 0, depth: 100, modifier: 1, slideShadows: true },
             loop: true,
             autoplay: { delay: 3500, disableOnInteraction: false },
             pagination: { el: ".swiper-pagination", clickable: true },
