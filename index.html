@@ -7,6 +7,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
@@ -29,6 +30,7 @@
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            cursor: zoom-in;
         }
 
         @media (min-width: 768px) {
@@ -60,7 +62,7 @@
         </video>
         
         <div class="relative z-20 text-center px-4 text-white mt-10">
-            <span class="uppercase tracking-[0.3em] text-[10px] md:text-xs text-white opacity-90 font-bold block mb-4">
+            <span class="uppercase tracking-[0.3em] text-[10px] md:text-xs text-white opacity-90 font-bold block mb-4 leading-relaxed">
                 Curadoria de Terrenos <br> em Domingos Martins
             </span>
 
@@ -70,7 +72,7 @@
                 Terrenos independentes validados para quem busca autenticidade e integração com a natureza.
             </p>
 
-            <a href="#vendas" class="bg-[#0056b3] text-white px-10 md:px-14 py-4 md:py-5 rounded-full text-sm md:text-xl font-bold inline-block shadow-2xl hover:scale-105 transition-transform">
+            <a href="#vendas" class="bg-[#f8991d] text-white px-10 md:px-14 py-4 md:py-5 rounded-full text-sm md:text-xl font-bold inline-block shadow-2xl hover:scale-105 transition-transform">
                 CONHECER PROPRIEDADES
             </a>
         </div>
@@ -79,24 +81,49 @@
     <section id="galeria" class="py-16 md:py-24 bg-[#0056b3]">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-serif text-white mb-2 text-shadow">Chancela de Qualidade</h2>
-            <p class="text-blue-100 uppercase tracking-widest text-[10px] md:text-xs font-bold mb-8 md:mb-12 opacity-80">O verdadeiro estilo de vida das montanhas capixabas</p>
+            <p class="text-blue-100 uppercase tracking-widest text-[10px] md:text-xs font-bold mb-8 md:mb-12 opacity-80">Clique para expandir as imagens e vídeos</p>
 
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="Imagens/foto1.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><video autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"><source src="Videos/video1.mp4" type="video/mp4"></video></div>
-                    <div class="swiper-slide"><img src="Imagens/foto2.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto3.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><video autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"><source src="Videos/video2.mp4" type="video/mp4"></video></div>
-                    <div class="swiper-slide"><img src="Imagens/foto4.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto5.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><video autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"><source src="Videos/video3.mp4" type="video/mp4"></video></div>
-                    <div class="swiper-slide"><img src="Imagens/foto6.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto7.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><video autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover"><source src="Videos/video4.mp4" type="video/mp4"></video></div>
-                    <div class="swiper-slide"><img src="Imagens/foto8.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto9.jpeg" class="w-full h-full object-cover"></div>
-                    <div class="swiper-slide"><img src="Imagens/foto10.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto1.jpeg">
+                        <img src="Imagens/foto1.jpeg" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Videos/video1.mp4">
+                        <video autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover">
+                            <source src="Videos/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto2.jpeg">
+                        <img src="Imagens/foto2.jpeg" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto3.jpeg">
+                        <img src="Imagens/foto3.jpeg" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Videos/video2.mp4">
+                        <video autoplay loop muted playsinline webkit-playsinline class="w-full h-full object-cover">
+                            <source src="Videos/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto4.jpeg">
+                        <img src="Imagens/foto4.jpeg" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto5.jpeg"><img src="Imagens/foto5.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Videos/video3.mp4"><video autoplay loop muted playsinline class="w-full h-full object-cover"><source src="Videos/video3.mp4" type="video/mp4"></video></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto6.jpeg"><img src="Imagens/foto6.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto7.jpeg"><img src="Imagens/foto7.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Videos/video4.mp4"><video autoplay loop muted playsinline class="w-full h-full object-cover"><source src="Videos/video4.mp4" type="video/mp4"></video></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto8.jpeg"><img src="Imagens/foto8.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto9.jpeg"><img src="Imagens/foto9.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto10.jpeg"><img src="Imagens/foto10.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto11.jpeg"><img src="Imagens/foto11.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto12.jpeg"><img src="Imagens/foto12.jpeg" class="w-full h-full object-cover"></div>
+                    <div class="swiper-slide" data-fancybox="gallery" data-src="Imagens/foto13.jpeg"><img src="Imagens/foto13.jpeg" class="w-full h-full object-cover"></div>
                 </div>
                 <div class="swiper-pagination !bottom-0"></div>
             </div>
@@ -147,7 +174,7 @@
                 </div>
 
                 <div class="w-full h-[350px] md:h-[480px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
-                    <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3737.5621323363364!2d-41.05465692475813!3d-20.37333898111663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIyJzI0LjAiUyA0McKwMDMnMDcuNSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000"></iframe>
+                    <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3737.565147854612!2d-41.0546569247585!3d-20.37333898111666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIyJzI0LjAiUyA0McKwMDMnMDcuNSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000"></iframe>
                 </div>
             </div>
         </div>
@@ -161,14 +188,10 @@
         <p class="text-gray-400 text-[9px] tracking-widest uppercase italic">© 2026 Refúgios Pedra Azul</p>
     </footer>
 
-    <div class="md:hidden fixed bottom-0 left-0 w-full z-[100] p-4 bg-gradient-to-t from-black/50 to-transparent">
-        <a href="https://wa.me/5527999891161?text=Olá,%20tenho%20interesse" class="flex items-center justify-center bg-[#f8991d] text-white py-4 rounded-2xl font-bold shadow-2xl animate-bounce-short text-xs">
-            SOLICITAR LOCALIZAÇÃO
-        </a>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
+        // Inicializar Swiper
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
@@ -180,16 +203,18 @@
             pagination: { el: ".swiper-pagination", clickable: true },
         });
 
+        // Inicializar Fancybox para Tela Cheia
+        Fancybox.bind("[data-fancybox]", {
+            // Opções personalizadas se necessário
+        });
+
+        // Autoplay mobile
         document.addEventListener('DOMContentLoaded', function() {
             var videos = document.querySelectorAll('video');
             videos.forEach(function(v) {
-                v.play().catch(function(e) {
-                    console.log("Autoplay aguardando interação.");
-                });
+                v.play().catch(function(e) { console.log("Autoplay aguardando."); });
             });
         });
     </script>
 </body>
 </html>
-
-
